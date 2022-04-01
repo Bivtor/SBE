@@ -1,0 +1,19 @@
+.contactStyle {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+.contactStyle #applyNowStyle {
+  font-size: 30px;
+  color: black;
+}
+.contactStyle .contactElement {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Contactus.module.css.map */

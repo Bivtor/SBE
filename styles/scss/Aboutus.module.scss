@@ -1,0 +1,40 @@
+
+//AboutUs CSS
+#AboutUs {
+    background-color: #7e98bb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: 100vh;
+    color: rgb(12 60 96);
+  
+    h1 {
+      font-size: 45px;
+    }
+  
+    .aboutusgrid {
+      position: relative;
+      padding-right: 100px;
+      padding-left: 100px;
+      // padding-top: 50px;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-evenly;
+      justify-items: center;
+      align-content: space-evenly;
+      align-items: center;
+  
+      .container1 {
+        img {
+          border-radius: 15px;
+        }
+      }
+  
+      .container2 {
+        article {
+          // color:white;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+  }

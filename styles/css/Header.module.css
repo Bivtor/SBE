@@ -1,0 +1,53 @@
+.headerDiv {
+  position: relative;
+  height: 16vh;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+}
+.headerDiv .topheader {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.headerDiv .topheader .imagebox {
+  transform: translateX(50%);
+  position: absolute;
+  width: 8vh;
+}
+.headerDiv .lowerheader {
+  display: flex;
+  align-items: center;
+  height: 6vh;
+  background-color: lightgray;
+}
+.headerDiv .lowerheader .nav1 {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.headerDiv .lowerheader .nav1 ul {
+  font-size: 17px;
+}
+@media (max-width: 1000px) {
+  .headerDiv .lowerheader .nav1 ul {
+    font-size: 14px;
+  }
+}
+.headerDiv .lowerheader .nav1 ul li {
+  display: inline;
+  padding-right: 2.4vw;
+}
+.headerDiv .lowerheader .nav1 ul li a,
+.headerDiv .lowerheader .nav1 ul li a:link {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.headerDiv .lowerheader .nav1 ul li a:hover {
+  color: blue;
+}
+.headerDiv .lowerheader .nav1 ul li#end {
+  padding-right: 0px;
+}

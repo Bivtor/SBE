@@ -1,0 +1,76 @@
+.IntroComponent {
+  position: relative;
+  height: 100vh;
+}
+.IntroComponent .bgImage {
+  height: 60vh;
+  width: 100%;
+  background-image: url("../images/bgimg8.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.IntroComponent .contentDiv {
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+.IntroComponent .contentDiv .s_title {
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .IntroComponent .contentDiv .s_title {
+    font-size: 30px;
+  }
+}
+.IntroComponent .contentDiv .s_title2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+}
+.IntroComponent .contentDiv .s_title2 h1 {
+  font-family: inherit;
+  font-weight: inherit;
+}
+@media (max-width: 1000px) {
+  .IntroComponent .contentDiv .s_title2 h1 {
+    font-size: 25px;
+  }
+}
+.IntroComponent .contentDiv .s_title2 h2 {
+  font-family: inherit;
+  font-weight: inherit;
+}
+@media (max-width: 1000px) {
+  .IntroComponent .contentDiv .s_title2 h2 {
+    font-size: 20px;
+  }
+}
+.IntroComponent .contentDiv .i_contactBox {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.IntroComponent .contentDiv .i_contactBox .gridItem {
+  width: 26vw;
+  height: 25vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+@media (max-width: 1200px) {
+  .IntroComponent .contentDiv .i_contactBox .gridItem {
+    font-size: 20px;
+    width: 16vw;
+    height: 15vh;
+  }
+}

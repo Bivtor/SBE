@@ -1,0 +1,41 @@
+@mixin theme1 {
+  background-color: rgb(209, 224, 235);
+  font-family: raleway, sans-serif;
+  font-stretch: 60px/1.4em;
+  color: black;
+}
+
+@mixin bgColor1 {
+  background-color: rgb(230, 230, 255);
+}
+
+@mixin color2bg {
+  background-color: lightgray;
+}
+@mixin color1 {
+  color: rgb(209, 224, 235);
+}
+
+@mixin font1{
+  
+}
+
+
+// //Global Button Style
+// .btn2{
+
+//     width: 140px;
+//     height: 60px;
+
+//     position: absolute;
+//     transform: translateX(-50%);
+//     left:50%; bottom: 10px;
+
+//     font-size: 16px;
+//     color: white;
+//     background-color:    #7e98bb;
+//     font-weight: bold;
+//     border-radius: 10px;
+//     border:none;
+//     outline: none;
+// }
