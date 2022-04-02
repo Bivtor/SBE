@@ -1,7 +1,5 @@
 
 
-import AboutUs from "./AboutUs";
-// import Contact from "./components/Contact";
 import IntroComponent from "./components/IntroComponent";
 import SBE_Description from "./components/SBE_Description";
 
@@ -11,9 +9,6 @@ const Home = () => {
     <div className={styles.home}>
       <IntroComponent />
       <SBE_Description/>
-      {/* <FacilitatorComp /> */}
-      {/* <AboutUs /> */}
-      {/* <Contact /> */}
     </div>
   );
 }

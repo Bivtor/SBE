@@ -2,6 +2,8 @@
   position: relative;
   height: 130px;
   font-family: "Montserrat", sans-serif;
+  background-color: white;
+  width: 100vw;
 }
 .headerDiv .topheader {
   margin-left: 1vw;
@@ -20,13 +22,17 @@
   display: flex;
   align-items: center;
   height: 50px;
+  font-family: inherit;
   background-color: lightgray;
 }
 .headerDiv .lowerheader .nav1 {
   margin-left: 1vw;
   margin-right: 1vw;
+  font-family: inherit;
+  font-family: "Montserrat", sans-serif;
 }
 .headerDiv .lowerheader .nav1 ul {
+  font-family: inherit;
   font-size: 17px;
 }
 @media (max-width: 1000px) {
@@ -35,12 +41,13 @@
   }
 }
 .headerDiv .lowerheader .nav1 ul li {
+  font-family: inherit;
   display: inline;
   padding-right: 2.5vw;
 }
 .headerDiv .lowerheader .nav1 ul li a,
 .headerDiv .lowerheader .nav1 ul li a:link {
-  font-family: "Montserrat", sans-serif;
+  font-family: inherit;
   text-decoration: none;
   color: black;
 }

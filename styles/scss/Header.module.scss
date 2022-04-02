@@ -5,7 +5,8 @@
   position: relative;
   height: 130px;
   font-family: "Montserrat", sans-serif;
-  // border: 2px solid red;
+  background-color: white;
+  width: 100vw;
 
   .topheader {
     margin-left: 1vw;
@@ -25,23 +26,28 @@
     display: flex;
     align-items: center;
     height: 50px;
+    font-family: inherit;
     @include color2bg();
 
     .nav1 {
       margin-left: 1vw;
       margin-right: 1vw;
+      font-family: inherit;
+      font-family: "Montserrat", sans-serif;
       ul {
+        font-family: inherit;
         font-size: 17px;
         @media (max-width: 1000px) {
           font-size: 14px;
         }
 
         li {
+          font-family: inherit;
           display: inline;
           padding-right: 2.5vw;
           a,
           a:link {
-            font-family: "Montserrat", sans-serif;
+            font-family: inherit;
             text-decoration: none;
             color: black;
           }

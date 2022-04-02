@@ -2,6 +2,11 @@
   position: relative;
   height: 700px;
 }
+@media (max-width: 1000px) {
+  .IntroComponent {
+    height: 900px;
+  }
+}
 .IntroComponent .bgImage {
   height: 500px;
   background-image: url("../images/bgimg8.jpeg");
@@ -11,6 +16,11 @@
   /* Add the blur effect */
   filter: blur(8px);
   -webkit-filter: blur(8px);
+}
+@media (max-width: 1000px) {
+  .IntroComponent .bgImage {
+    height: 650px;
+  }
 }
 .IntroComponent .contentDiv {
   height: inherit;
@@ -54,22 +64,55 @@
   }
 }
 .IntroComponent .contentDiv .i_contactBox {
-  height: 50vh;
+  height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .IntroComponent .contentDiv .i_contactBox {
+    flex-direction: column;
+    height: 600px;
+  }
 }
 .IntroComponent .contentDiv .i_contactBox .gridItem {
-  width: 26vw;
-  height: 25vh;
+  width: 400px;
+  height: 200px;
   font-family: "Montserrat", sans-serif;
   background-color: lightgray;
   border-radius: 5px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
 }
-@media (max-width: 1200px) {
-  .IntroComponent .contentDiv .i_contactBox .gridItem {
-    font-size: 20px;
-    width: 16vw;
-    height: 15vh;
+.IntroComponent .contentDiv .i_contactBox .gridItem h1 {
+  text-align: inherit;
+  font-family: inherit;
+  font-weight: 300;
+}
+@media (max-width: 1000px) {
+  .IntroComponent .contentDiv .i_contactBox .gridItem h1 {
+    font-size: 26px;
   }
+}
+.IntroComponent .contentDiv .i_contactBox .gridItem a, .IntroComponent .contentDiv .i_contactBox .gridItem a:link {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.IntroComponent .contentDiv .i_contactBox .gridItem a:hover {
+  color: blue;
+  border-color: blue;
+}
+.IntroComponent .contentDiv .i_contactBox .gridItem h4 {
+  text-align: inherit;
+  font-weight: 200;
+  font-size: 18px;
 }

@@ -1,0 +1,30 @@
+.contact {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  height: 500px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+@media (max-width: 1000px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+.contact .image {
+  border-radius: 5px;
+}
+.contact .articles {
+  font-family: inherit;
+}
+.contact .articles article {
+  text-align: center;
+  font-family: inherit;
+}
+@media (max-width: 1000px) {
+  .contact .articles article {
+    font-size: 15px;
+  }
+}
