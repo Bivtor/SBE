@@ -9,6 +9,11 @@
 }
 @media (max-width: 1000px) {
   .desc {
+    height: 600px;
+  }
+}
+@media (max-width: 1000px) {
+  .desc {
     font-size: 20px;
   }
 }
@@ -18,19 +23,29 @@
   font-size: inherit;
 }
 .desc .box2 {
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
   padding-top: 3vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  font-family: inherit;
+}
+@media (max-width: 800px) {
+  .desc .box2 {
+    flex-direction: column;
+    align-content: space-between;
+    gap: 20px;
+  }
 }
 .desc .box2 .item {
+  font-style: italic;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
   font-family: inherit;
   font-size: 20px;
+  text-align: center;
 }
 .desc .box2 .item .imagebox {
   height: 50px;

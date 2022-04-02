@@ -3,41 +3,42 @@
 
 .headerDiv {
   position: relative;
-  height: 16vh;
-  width: 100vw;
+  height: 130px;
   font-family: "Montserrat", sans-serif;
+  // border: 2px solid red;
 
   .topheader {
     margin-left: 1vw;
     margin-right: 1vw;
-    height: 10vh;
+    height: 80px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     .imagebox {
       transform: translateX(50%);
       position: absolute;
-      width: 8vh;
+      width: 70px;
     }
   }
 
   .lowerheader {
     display: flex;
     align-items: center;
-    height: 6vh;
+    height: 50px;
     @include color2bg();
 
     .nav1 {
       margin-left: 1vw;
       margin-right: 1vw;
       ul {
+        font-size: 17px;
         @media (max-width: 1000px) {
           font-size: 14px;
         }
-        font-size: 17px;
+
         li {
           display: inline;
-          padding-right: 2.4vw;
+          padding-right: 2.5vw;
           a,
           a:link {
             font-family: "Montserrat", sans-serif;
@@ -53,27 +54,5 @@
         }
       }
     }
-    // div {
-    //   display: flex;
-    //   flex-grow: 1;
-    //   height: 4vw;
-
-    //   // border: 1px solid black;
-    //   // border-bottom: none;
-    //   z-index: 1;
-    //   border-radius: 3px;
-    //   justify-content: center;
-    //   align-items: center;
-    //   text-align: center;
-    //   font-size: 18px;
-    //   a,
-    //   a:link {
-    //     text-decoration: none;
-    //     color: black;
-    //   }
-    //   a:hover {
-    //     color: blue;
-    //   }
-    // }
   }
 }

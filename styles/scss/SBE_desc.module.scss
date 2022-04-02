@@ -4,6 +4,9 @@
   margin-left: 1vw;
   margin-right: 1vw;
   height: 400px;
+  @media (max-width: 1000px) {
+    height: 600px;
+  }
   position: relative;
   font-size: 28px;
   font-family: "Montserrat", sans-serif;
@@ -11,6 +14,7 @@
     font-size: 20px;
   }
   background-color: inherit;
+
   h2 {
     text-align: center;
     font-family: inherit;
@@ -18,21 +22,31 @@
   }
 
   .box2 {
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-content: space-between;
+      gap: 20px;
+    }
     padding-top: 3vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    font-family: inherit;
 
     .item {
+      font-style: italic;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
-      flex-wrap: wrap;
+      align-items: center;
+
       font-family: inherit;
       font-size: 20px;
+      text-align: center;
 
       .imagebox {
+        // transform: translateY(-50%);
         height: 50px;
         width: 50px;
       }

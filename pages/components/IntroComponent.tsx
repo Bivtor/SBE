@@ -9,7 +9,7 @@ const IntroComponent = () => {
             <div className={styles.bgImage}></div>
             <div className={styles.contentDiv}>
 
-                <h1 className={styles.s_title}>Solution Based Enterprise</h1>
+                <h1 className={styles.s_title}>Solution Based Enterprises</h1>
 
                 <div className={styles.i_contactBox}>
                     <div className={styles.gridItem}>  </div>

@@ -1,13 +1,12 @@
 .headerDiv {
   position: relative;
-  height: 16vh;
-  width: 100vw;
+  height: 130px;
   font-family: "Montserrat", sans-serif;
 }
 .headerDiv .topheader {
   margin-left: 1vw;
   margin-right: 1vw;
-  height: 10vh;
+  height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -15,12 +14,12 @@
 .headerDiv .topheader .imagebox {
   transform: translateX(50%);
   position: absolute;
-  width: 8vh;
+  width: 70px;
 }
 .headerDiv .lowerheader {
   display: flex;
   align-items: center;
-  height: 6vh;
+  height: 50px;
   background-color: lightgray;
 }
 .headerDiv .lowerheader .nav1 {
@@ -37,7 +36,7 @@
 }
 .headerDiv .lowerheader .nav1 ul li {
   display: inline;
-  padding-right: 2.4vw;
+  padding-right: 2.5vw;
 }
 .headerDiv .lowerheader .nav1 ul li a,
 .headerDiv .lowerheader .nav1 ul li a:link {

@@ -4,31 +4,39 @@ import Image from 'next/image';
 
 import constr from '../../public/icons/constr.png'
 import tech from '../../public/icons/tech.png'
-import hcare from '../../public/icons/hcare.png'
+import hcare from '../../public/icons/hcare.webp'
 import design from '../../public/icons/design.png'
 
 
-const makeRows = ((name: Array<string>, icons: Array<StaticImageData>) => {
-    return name.map((elem) =>
+const makeRows = ((data: Array<Array<(string | StaticImageData)>>) => {
+    return data.map((elem) =>
         <div className={styles.item} key={elem.toString()}>
-            {elem}
             <div className={styles.imagebox}>
                 <Image
                     alt='icon'
-                    src={tech}
+                    src={elem[1]}
                     layout='responsive'
                 ></Image>
             </div>
+            {elem[0]}
         </div>
     );
 })
 
+
+// let scores = new Map<string, number>();
+// scores.set("bill", 10);
+// scores.set("bob", "10"); // 💥 - Argument of type 'string' is not assignable to parameter of type 'number'.
+
+
 const SBE_Description = () => {
     return (
         <div className={styles.desc}>
-            <h2>Solution Based Enterprises is a boutique staffing and recruitment agency. We offer nation-wide staffing and recruitment services to various industries, including but not limited to:</h2>
+            <h2>Solution Based Enterprises is a boutique staffing and recruitment agency. We offer nation-wide staffing and recruitment services for various industries, including but not limited to:</h2>
+            <br />
+
             <div className={styles.box2}>
-                {makeRows(["Construction", "Tech", "Healthcare", "Design + Creative"], [constr, tech, hcare, design])}
+                {makeRows([["Construction", constr], ["Tech", tech], ["Healthcare", hcare], ["Design + Creative", design]])}
             </div>
         </div>
     )
