@@ -1,14 +1,13 @@
 .IntroComponent {
   position: relative;
-  height: 700px;
 }
 @media (max-width: 1000px) {
   .IntroComponent {
-    height: 900px;
+    height: 1500px;
   }
 }
 .IntroComponent .bgImage {
-  height: 500px;
+  height: 450px;
   background-image: url("../images/bgimg8.jpeg");
   background-position: center;
   background-repeat: no-repeat;
@@ -25,6 +24,10 @@
 .IntroComponent .contentDiv {
   height: inherit;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
   position: absolute;
   top: 0px;
 }
@@ -39,31 +42,32 @@
     font-size: 30px;
   }
 }
-.IntroComponent .contentDiv .s_title2 {
+.IntroComponent .s_title2 {
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   text-decoration: none;
   text-align: center;
 }
-.IntroComponent .contentDiv .s_title2 h1 {
+.IntroComponent .s_title2 h1 {
   font-family: inherit;
   font-weight: inherit;
 }
 @media (max-width: 1000px) {
-  .IntroComponent .contentDiv .s_title2 h1 {
+  .IntroComponent .s_title2 h1 {
     font-size: 25px;
   }
 }
-.IntroComponent .contentDiv .s_title2 h2 {
+.IntroComponent .s_title2 h2 {
   font-family: inherit;
   font-weight: inherit;
 }
 @media (max-width: 1000px) {
-  .IntroComponent .contentDiv .s_title2 h2 {
+  .IntroComponent .s_title2 h2 {
     font-size: 20px;
   }
 }
-.IntroComponent .contentDiv .i_contactBox {
+.IntroComponent .i_contactBox {
+  width: 100vw;
   height: 400px;
   display: flex;
   flex-direction: row;
@@ -71,16 +75,16 @@
   align-items: center;
 }
 @media (max-width: 1000px) {
-  .IntroComponent .contentDiv .i_contactBox {
+  .IntroComponent .i_contactBox {
     flex-direction: column;
     height: 600px;
   }
 }
-.IntroComponent .contentDiv .i_contactBox .gridItem {
+.IntroComponent .i_contactBox .gridItem {
   width: 400px;
   height: 200px;
   font-family: "Montserrat", sans-serif;
-  background-color: lightgray;
+  background-color: #ffebc7;
   border-radius: 5px;
   align-items: center;
   display: flex;
@@ -90,29 +94,68 @@
   text-align: center;
   padding: 20px;
 }
-.IntroComponent .contentDiv .i_contactBox .gridItem h1 {
+.IntroComponent .i_contactBox .gridItem h1 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
   text-align: inherit;
   font-family: inherit;
   font-weight: 300;
 }
 @media (max-width: 1000px) {
-  .IntroComponent .contentDiv .i_contactBox .gridItem h1 {
+  .IntroComponent .i_contactBox .gridItem h1 {
     font-size: 26px;
   }
 }
-.IntroComponent .contentDiv .i_contactBox .gridItem a, .IntroComponent .contentDiv .i_contactBox .gridItem a:link {
+.IntroComponent .i_contactBox .gridItem a,
+.IntroComponent .i_contactBox .gridItem a:link {
   text-decoration: none;
   color: black;
-  border: 2px solid black;
-  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-decoration: underline;
   font-size: 20px;
 }
-.IntroComponent .contentDiv .i_contactBox .gridItem a:hover {
+.IntroComponent .i_contactBox .gridItem a:hover {
   color: blue;
   border-color: blue;
 }
-.IntroComponent .contentDiv .i_contactBox .gridItem h4 {
+.IntroComponent .i_contactBox .gridItem h4 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
   text-align: inherit;
   font-weight: 200;
   font-size: 18px;
+}
+.IntroComponent .descSect {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .IntroComponent .descSect {
+    flex-direction: column;
+  }
+}
+.IntroComponent .descSect .s_image {
+  border-radius: 5px;
+}
+.IntroComponent .descSect .desc_box {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 400px;
+}
+.IntroComponent .descSect .desc_box h3 {
+  font-weight: 400;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+@media (max-width: 1000px) {
+  .IntroComponent .descSect .desc_box h3 {
+    font-size: 15px;
+  }
 }

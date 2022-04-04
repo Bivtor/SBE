@@ -1,23 +1,19 @@
-@mixin theme1 {
-  background-color: rgb(209, 224, 235);
-  font-family: raleway, sans-serif;
-  font-stretch: 60px/1.4em;
+@mixin color1bg {
+  // background-color: #254e58;
+  background-color: rgb(255, 235, 199);
+}
+@mixin color2bg {
+  background-color: #88bdbc;
+}
+
+@mixin text-color-2 {
+  font-family: "Montserrat", sans-serif;
   color: black;
 }
 
-@mixin bgColor1 {
-  background-color: rgb(230, 230, 255);
-}
-
-@mixin color2bg {
-  background-color: lightgray;
-}
-@mixin color1 {
-  color: rgb(209, 224, 235);
-}
-
-@mixin font1{
-  
+@mixin text-color-1 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
 }
 
 

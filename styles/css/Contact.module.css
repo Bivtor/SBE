@@ -1,4 +1,8 @@
-.contact {
+.all {
+  background-color: #ffebc7;
+  height: 100vh;
+}
+.all .contact {
   font-family: "Montserrat", sans-serif;
   display: flex;
   height: 500px;
@@ -9,22 +13,22 @@
   margin: 20px;
 }
 @media (max-width: 1000px) {
-  .contact {
+  .all .contact {
     flex-direction: column;
   }
 }
-.contact .image {
+.all .contact .image {
   border-radius: 5px;
 }
-.contact .articles {
+.all .contact .articles {
   font-family: inherit;
 }
-.contact .articles article {
+.all .contact .articles article {
   text-align: center;
   font-family: inherit;
 }
 @media (max-width: 1000px) {
-  .contact .articles article {
+  .all .contact .articles article {
     font-size: 15px;
   }
 }

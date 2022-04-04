@@ -7,7 +7,7 @@ import busimg from '../public/g_port.jpeg'
 
 const Contact = () => {
   return (
-    <>
+    <div className={styles.all}>
       <Header />
       <div className={styles.contact}>
         <Image
@@ -26,7 +26,7 @@ const Contact = () => {
           </article>
         </div>
       </div >
-    </>
+    </div>
   )
 }
 export default Contact;

@@ -5,7 +5,7 @@
   position: relative;
   height: 130px;
   font-family: "Montserrat", sans-serif;
-  background-color: white;
+  @include color1bg();
   width: 100vw;
 
   .topheader {

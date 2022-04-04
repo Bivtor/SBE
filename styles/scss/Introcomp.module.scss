@@ -3,13 +3,13 @@
 
 .IntroComponent {
   position: relative;
-  height: 700px;
+
   @media (max-width: 1000px) {
-    height: 900px;
+    height: 1500px;
   }
 
   .bgImage {
-    height: 500px;
+    height: 450px;
     @media (max-width: 1000px) {
       height: 650px;
     }
@@ -23,9 +23,13 @@
   }
 
   .contentDiv {
-    // display: inline-block;
     height: inherit;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // row-gap: 50px;
+    align-content: center;
     position: absolute;
     top: 0px;
 
@@ -39,78 +43,111 @@
       font-size: 35px;
       text-align: center;
     }
+  }
+  .s_title2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
 
-    .s_title2 {
-      font-family: "Montserrat", sans-serif;
-      font-weight: normal;
-      text-decoration: none;
-      text-align: center;
-
-      h1 {
-        @media (max-width: 1000px) {
-          font-size: 25px;
-        }
-        font-family: inherit;
-        font-weight: inherit;
+    h1 {
+      @media (max-width: 1000px) {
+        font-size: 25px;
       }
-      h2 {
-        @media (max-width: 1000px) {
-          font-size: 20px;
-        }
+      font-family: inherit;
+      font-weight: inherit;
+    }
+    h2 {
+      @media (max-width: 1000px) {
+        font-size: 20px;
+      }
+      font-family: inherit;
+      font-weight: inherit;
+    }
+  }
+
+  .i_contactBox {
+    width: 100vw;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      height: 600px;
+    }
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .gridItem {
+      width: 400px;
+      height: 200px;
+      font-family: "Montserrat", sans-serif;
+      // @include color2bg();
+      @include color1bg();
+      border-radius: 5px;
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      h1 {
+        @include text-color-2();
+        text-align: inherit;
         font-family: inherit;
-        font-weight: inherit;
+        font-weight: 300;
+        @media (max-width: 1000px) {
+          font-size: 26px;
+        }
+      }
+      a,
+      a:link {
+        text-decoration: none;
+        color: black;
+        @include text-color-2();
+        text-decoration: underline;
+        font-size: 20px;
+      }
+      a:hover {
+        color: blue;
+        border-color: blue;
+      }
+      h4 {
+        @include text-color-2();
+        text-align: inherit;
+        font-weight: 200;
+        font-size: 18px;
       }
     }
+  }
 
-    .i_contactBox {
-      @media (max-width: 1000px) {
-        flex-direction: column;
-        height: 600px;
-      }
-      height: 400px;
+  .descSect {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+    .s_image {
+      border-radius: 5px;
+    }
+    .desc_box {
       display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
+      flex-direction: column;
+      align-content: space-between;
+      width: 400px;
 
-      .gridItem {
-        width: 400px;
-        height: 200px;
-        font-family: "Montserrat", sans-serif;
-        @include color2bg();
-        border-radius: 5px;
-        align-items: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+      h3 {
+        font-weight: 400;
         text-align: center;
-        padding: 20px;
-        h1 {
-          // transform: translateY(-50%);
-          text-align: inherit;
-          font-family: inherit;
-          font-weight: 300;
-          @media (max-width: 1000px) {
-            font-size: 26px;
-          }
-        }
-        a, a:link{
-          text-decoration: none;
-          color: black;
-          // color: ;
-          border: 2px solid black;
-          border-radius: 5px;
-          font-size: 20px;
-        }
-        a:hover{
-          color: blue;
-          border-color: blue;
-        }
-        h4{
-          text-align: inherit;
-          font-weight: 200;
-          font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        @include text-color-2();
+
+        @media (max-width: 1000px) {
+          font-size: 15px;
         }
       }
     }
