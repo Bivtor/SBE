@@ -8,30 +8,10 @@
 
 @mixin text-color-2 {
   font-family: "Montserrat", sans-serif;
-  color: black;
+  color: rgb(108, 107, 107);
 }
 
 @mixin text-color-1 {
   font-family: "Montserrat", sans-serif;
   color: white;
 }
-
-
-// //Global Button Style
-// .btn2{
-
-//     width: 140px;
-//     height: 60px;
-
-//     position: absolute;
-//     transform: translateX(-50%);
-//     left:50%; bottom: 10px;
-
-//     font-size: 16px;
-//     color: white;
-//     background-color:    #7e98bb;
-//     font-weight: bold;
-//     border-radius: 10px;
-//     border:none;
-//     outline: none;
-// }

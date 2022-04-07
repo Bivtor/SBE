@@ -1,0 +1,38 @@
+.hiring {
+  background-color: #ffebc7;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: #6c6b6b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hiring h1,
+.hiring article {
+  font-family: inherit;
+  text-align: center;
+}
+.hiring .jobcontainer {
+  font-family: inherit;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 800px;
+  height: 1200px;
+}
+@media (max-width: 1000px) {
+  .hiring .jobcontainer {
+    width: 100vw;
+  }
+}
+.hiring .jobcontainer .jobtitle {
+  font-family: inherit;
+  background-color: #88bdbc;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
+}
+.hiring .jobcontainer .jobtitle h1 {
+  font-family: inherit;
+  transform: translateY(-50%);
+}

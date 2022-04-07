@@ -29,8 +29,6 @@ const Life = () => {
                     <Image className={styles.img} src={sm3} layout='fixed' height={100} width={200}></Image>
                     <Image className={styles.img} src={sm4} layout='fixed' height={100} width={200}></Image>
                 </div>}
-
-
             </div>
         </div>
     )
