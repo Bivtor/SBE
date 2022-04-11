@@ -1,21 +1,20 @@
 @use "base" as *;
 .all {
-  @include color1bg();
+  height: 100vh;
+  @include color2bg();
   .life {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     @include text-color-2();
 
-    h4 {
-      padding: 50px;
+    h4 ,h3{
       @media (min-width: 1000px) {
         padding-bottom: 0px;
       }
       text-align: center;
       font-family: inherit;
-      width: 500px;
+      // width: 500px;
     }
 
     .images {
@@ -23,7 +22,6 @@
       flex-wrap: wrap;
       column-gap: 20px;
       align-items: center;
-      height: 600px;
 
       @media (max-width: 1100px) {
         flex-direction: column;

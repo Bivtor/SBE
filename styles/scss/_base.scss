@@ -1,14 +1,14 @@
 @mixin color1bg {
   // background-color: #254e58;
-  background-color: rgb(255, 235, 199);
+  background-color: rgb(202, 202, 202);
 }
 @mixin color2bg {
-  background-color: #88bdbc;
+  background-color: #88bdbc71;
 }
 
 @mixin text-color-2 {
   font-family: "Montserrat", sans-serif;
-  color: rgb(108, 107, 107);
+  color: rgb(0, 0, 0);
 }
 
 @mixin text-color-1 {

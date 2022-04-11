@@ -1,0 +1,44 @@
+@use "base" as *;
+.process {
+  height: 100vh;
+  @include color2bg();
+  @include text-color-2();
+
+  .horizbox {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+    justify-content: space-evenly;
+    align-items: center;
+    .imgbox {
+        @media (max-width: 1000px) {
+            width: 400px;
+          }
+      width: 500px;
+      .img {
+        border-radius: 5px;
+      }
+    }
+    .textbox {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      h3 {
+        font-family: inherit;
+      }
+      .smalltext {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 30px;
+
+        font-family: inherit;
+        article {
+          font-family: inherit;
+        }
+      }
+    }
+  }
+}

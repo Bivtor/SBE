@@ -2,7 +2,7 @@
   position: relative;
   height: 130px;
   font-family: "Montserrat", sans-serif;
-  background-color: #ffebc7;
+  background-color: #cacaca;
   width: 100vw;
 }
 .headerDiv .topheader {
@@ -19,11 +19,11 @@
   width: 70px;
 }
 .headerDiv .lowerheader {
+  z-index: 1;
   display: flex;
   align-items: center;
   height: 50px;
   font-family: inherit;
-  background-color: #88bdbc;
 }
 .headerDiv .lowerheader .nav1 {
   margin-left: 1vw;

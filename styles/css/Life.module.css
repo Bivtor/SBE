@@ -1,22 +1,20 @@
 .all {
-  background-color: #ffebc7;
+  height: 100vh;
+  background-color: #88bdbc71;
 }
 .all .life {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  color: #6c6b6b;
+  color: black;
 }
-.all .life h4 {
-  padding: 50px;
+.all .life h4, .all .life h3 {
   text-align: center;
   font-family: inherit;
-  width: 500px;
 }
 @media (min-width: 1000px) {
-  .all .life h4 {
+  .all .life h4, .all .life h3 {
     padding-bottom: 0px;
   }
 }
@@ -25,7 +23,6 @@
   flex-wrap: wrap;
   column-gap: 20px;
   align-items: center;
-  height: 600px;
 }
 @media (max-width: 1100px) {
   .all .life .images {

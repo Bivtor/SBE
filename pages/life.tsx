@@ -17,7 +17,10 @@ const Life = () => {
             <Header />
             <div className={styles.life}>
 
-                <h4>The busy life of Santa Monica California can make finding talent a drag, lean on our years spent developing genuine connections with local professionals to take the hassle out of hiring.</h4>
+                <br />
+                <h4>The busy life of Santa Monica California can make finding talent a drag</h4>
+                <h3>Lean on our years spent developing genuine connections with local professionals to take the hassle out of hiring!</h3>
+                <br />
 
                 {isDesktop ? <div className={styles.images}>
                     <Image className={styles.img} src={sm1} layout='fixed' height={200} width={300}></Image>
@@ -29,6 +32,7 @@ const Life = () => {
                     <Image className={styles.img} src={sm3} layout='fixed' height={100} width={200}></Image>
                     <Image className={styles.img} src={sm4} layout='fixed' height={100} width={200}></Image>
                 </div>}
+
             </div>
         </div>
     )

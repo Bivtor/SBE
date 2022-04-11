@@ -1,5 +1,5 @@
 .all {
-  background-color: #ffebc7;
+  background-color: #88bdbc71;
   height: 100vh;
 }
 .all .contact {
@@ -23,12 +23,12 @@
 .all .contact .articles {
   font-family: inherit;
 }
-.all .contact .articles article {
+.all .contact .articles h4, .all .contact .articles h3 {
   text-align: center;
   font-family: inherit;
 }
 @media (max-width: 1000px) {
-  .all .contact .articles article {
+  .all .contact .articles h4, .all .contact .articles h3 {
     font-size: 15px;
   }
 }

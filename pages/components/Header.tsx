@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/sbt.png";
+import logo from "../../public/sbeimg.png";
 import styles from "../../styles/css/Header.module.css";
 
 const Header = () => {

@@ -1,11 +1,12 @@
 @use "base" as *;
 .all {
-  background-color: rgb(255, 235, 199);;
+  @include color2bg();
   height: 100vh;
   .contact {
     font-family: "Montserrat", sans-serif;
     display: flex;
     height: 500px;
+
     @media (max-width: 1000px) {
       flex-direction: column;
     }
@@ -21,7 +22,7 @@
     .articles {
       font-family: inherit;
 
-      article {
+      h4,h3 {
         text-align: center;
         font-family: inherit;
 
