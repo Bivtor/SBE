@@ -1,5 +1,3 @@
-
-
 import Header from './components/Header';
 import styles from '../styles/css/Jsearch.module.css'
 
@@ -15,4 +13,5 @@ const JobSearch = () => {
         </div>
     )
 }
+
 export default JobSearch;

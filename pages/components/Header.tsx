@@ -32,29 +32,14 @@ const Header = () => {
               </Link>
             </li>
 
-            <li id={styles.end}>
+            {/* <li id={styles.end}>
               <Link href="/hiring-process">
                 <a>Our Hiring Process</a>
               </Link>
-            </li>
+            </li> */}
 
           </ul>
         </nav>
-
-
-        {/* <div className={styles.lowerheader}>
-        <div>
-          <Link href="/seekingtalent" >
-            <a>Seeking Talent</a>
-          </Link>
-        </div>
-        
-        <div>
-          <Link href="/hiringtalent">
-            <a>Hiring Talent</a>
-          </Link>
-        </div>
-      </div > */}
       </div >
     </div>
   );

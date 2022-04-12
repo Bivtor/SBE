@@ -32,7 +32,7 @@ const SBE_Description = () => {
             <br />
 
             <div className={styles.box2}>
-                {makeRows([["Construction", constr], ["Tech", tech], ["Healthcare", hcare], ["Design + Creative", design]])}
+                {makeRows([["Healthcare", hcare],  ["Tech", tech],  ["Construction", constr], ["Design + Creative", design]])}
             </div>
         </div>
     )

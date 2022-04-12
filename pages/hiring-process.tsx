@@ -8,7 +8,7 @@ const HiringProcess = () => {
     return (
         <div className={styles.process}>
             <Header />
-            <br />
+            {/* <br />
             <br />
             <div className={styles.horizbox}>
                 <div className={styles.imgbox}>
@@ -28,7 +28,7 @@ const HiringProcess = () => {
                         <article>Trusted Community Members</article>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
