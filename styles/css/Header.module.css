@@ -6,8 +6,6 @@
   width: 100vw;
 }
 .headerDiv .topheader {
-  margin-left: 1vw;
-  margin-right: 1vw;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -15,8 +13,7 @@
 }
 .headerDiv .topheader .imagebox {
   transform: translateX(50%);
-  position: absolute;
-  width: 70px;
+  width: 120px;
 }
 .headerDiv .lowerheader {
   z-index: 1;

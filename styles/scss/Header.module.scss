@@ -9,16 +9,15 @@
   width: 100vw;
 
   .topheader {
-    margin-left: 1vw;
-    margin-right: 1vw;
+    // margin-left: 1vw;
+    // margin-right: 1vw;
     height: 80px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     .imagebox {
       transform: translateX(50%);
-      position: absolute;
-      width: 70px;
+      width: 120px;
     }
   }
 

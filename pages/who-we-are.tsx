@@ -1,6 +1,6 @@
 
 
-import styles from '../styles/css/Contact.module.css'
+import styles from '../styles/css/Whoweare.module.css'
 import Image from 'next/image';
 import Header from './components/Header';
 import busimg from '../public/g_port.jpeg';
@@ -25,7 +25,7 @@ const Contact = () => {
           <Image
             className={styles.image}
             src={busimg}
-            
+
             alt='Photograph'
           />}
 

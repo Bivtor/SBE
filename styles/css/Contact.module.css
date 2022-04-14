@@ -1,34 +1,20 @@
-.all {
-  background-color: #88bdbc71;
-  height: 100vh;
-}
-.all .contact {
+.title {
   font-family: "Montserrat", sans-serif;
-  display: flex;
-  height: 500px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin: 20px;
-}
-@media (max-width: 1000px) {
-  .all .contact {
-    flex-direction: column;
-  }
-}
-.all .contact .image {
-  border-radius: 5px;
-}
-.all .contact .articles {
-  font-family: inherit;
-}
-.all .contact .articles h4, .all .contact .articles h3 {
   text-align: center;
-  font-family: inherit;
 }
-@media (max-width: 1000px) {
-  .all .contact .articles h4, .all .contact .articles h3 {
-    font-size: 15px;
-  }
+
+.contactBox {
+  font-family: inherit;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.contactBox .contactForm {
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contactBox .contactForm label {
+  font-family: inherit;
 }

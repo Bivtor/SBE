@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "dotenv": "^16.0.0",
     "formik": "^2.2.9",
     "mongodb": "^4.5.0",
