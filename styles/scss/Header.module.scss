@@ -3,21 +3,48 @@
 
 .headerDiv {
   position: relative;
-  height: 130px;
-  font-family: "Montserrat", sans-serif;
+  height: 100px;
   @include color1bg();
   width: 100vw;
 
   .topheader {
-    // margin-left: 1vw;
-    // margin-right: 1vw;
-    height: 80px;
+    height: inherit;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
     align-items: center;
+
+    @media (max-width: 1000px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     .imagebox {
-      transform: translateX(50%);
+      // position: absolute;
+      // left: 0px;
       width: 120px;
+      a,
+      a:link {
+        text-decoration: none;
+      }
+      h2 {
+        text-align: center;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 46px;
+        @include text-color-2();
+      }
+    }
+    .title {
+      font-weight: normal;
+      font-size: 36px;
+      @media (max-width: 1000px) {
+        font-size: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      @include text-color-1();
     }
   }
 

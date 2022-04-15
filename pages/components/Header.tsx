@@ -8,18 +8,20 @@ const Header = () => {
     <div className={styles.headerDiv}>
       <div className={styles.topheader}>
         <div className={styles.imagebox}>
-          <Link href="/">
-            <a>
-              <Image alt="logo" src={logo} layout="responsive" ></Image>
+          <Link href="/" >
+            <a >
+              {/* <Image alt="logo" src={logo} layout="responsive" ></Image> */}
+              <h2>SBE</h2>
             </a>
           </Link>
         </div>
+        <h1 className={styles.title}>Solution Based Enterprises</h1>
+
       </div>
 
-      <div className={styles.lowerheader}>
+      {/* <div className={styles.lowerheader}>
         <nav className={styles.nav1}>
-          <ul>
-
+          <ul> 
             <li>
               <Link href="/life">
                 <a>Life And Culture</a>
@@ -30,19 +32,21 @@ const Header = () => {
               <Link href="/who-we-are" >
                 <a>Who We Are</a>
               </Link>
-            </li>
+            </li> 
 
-            {/* <li id={styles.end}>
+            <li id={styles.end}>
               <Link href="/hiring-process">
                 <a>Our Hiring Process</a>
               </Link>
-            </li> */}
+            </li> 
 
           </ul>
         </nav>
-      </div >
+      </div > */}
     </div>
   );
 }
 
 export default Header;
+
+

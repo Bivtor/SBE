@@ -8,7 +8,7 @@
 }
 @media (max-width: 1000px) {
   .desc {
-    height: 600px;
+    height: 700px;
   }
 }
 @media (max-width: 1000px) {
@@ -16,10 +16,11 @@
     font-size: 20px;
   }
 }
-.desc h3 {
+.desc h3,
+.desc h4 {
   text-align: center;
   font-family: inherit;
-  font-size: inherit;
+  font-weight: normal;
 }
 .desc .box2 {
   justify-content: space-evenly;

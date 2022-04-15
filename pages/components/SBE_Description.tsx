@@ -28,13 +28,17 @@ const makeRows = ((data: Array<Array<(string | StaticImageData)>>) => {
 const SBE_Description = () => {
     return (
         <div className={styles.desc}>
-            <h3>Solution Based Enterprises is a boutique staffing and recruitment agency. We offer nation-wide staffing and recruitment services for various industries, including but not limited to:</h3>
+            
+            <h3>We&apos;re small but mighty</h3>
+            <h4>Our lean staff means that we can keep our prices lower than our competitors</h4>
+            <h4>Industries that we typically service include (but are not limited to):</h4>
             <br />
 
             <div className={styles.box2}>
-                {makeRows([["Healthcare", hcare],  ["Tech", tech],  ["Construction", constr], ["Design + Creative", design]])}
+                {makeRows([["Healthcare", hcare], ["Tech", tech], ["Construction", constr], ["Design + Creative", design]])}
             </div>
         </div>
     )
 }
+
 export default SBE_Description;

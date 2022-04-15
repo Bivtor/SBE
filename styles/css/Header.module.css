@@ -1,19 +1,49 @@
 .headerDiv {
   position: relative;
-  height: 130px;
-  font-family: "Montserrat", sans-serif;
+  height: 100px;
   background-color: #cacaca;
   width: 100vw;
 }
 .headerDiv .topheader {
-  height: 80px;
+  height: inherit;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
   align-items: center;
 }
+@media (max-width: 1000px) {
+  .headerDiv .topheader {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .headerDiv .topheader .imagebox {
-  transform: translateX(50%);
   width: 120px;
+}
+.headerDiv .topheader .imagebox a,
+.headerDiv .topheader .imagebox a:link {
+  text-decoration: none;
+}
+.headerDiv .topheader .imagebox h2 {
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 46px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+.headerDiv .topheader .title {
+  font-weight: normal;
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 1000px) {
+  .headerDiv .topheader .title {
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .headerDiv .lowerheader {
   z-index: 1;
