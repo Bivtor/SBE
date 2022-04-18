@@ -124,16 +124,26 @@
     flex-direction: column;
   }
 }
-.IntroComponent .descSect .s_image {
+.IntroComponent .descSect .imgdivdesc {
+  width: 550px;
+}
+@media (max-width: 1000px) {
+  .IntroComponent .descSect .imgdivdesc {
+    width: 350px;
+  }
+}
+.IntroComponent .descSect .imgdivdesc .s_image {
   border-radius: 5px;
 }
 .IntroComponent .descSect .desc_box {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  width: 400px;
+  width: 500px;
 }
-.IntroComponent .descSect .desc_box h3, .IntroComponent .descSect .desc_box h2, .IntroComponent .descSect .desc_box h1 {
+.IntroComponent .descSect .desc_box h3,
+.IntroComponent .descSect .desc_box h2,
+.IntroComponent .descSect .desc_box h1 {
   font-weight: normal;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -141,7 +151,9 @@
   color: black;
 }
 @media (max-width: 1000px) {
-  .IntroComponent .descSect .desc_box h3, .IntroComponent .descSect .desc_box h2, .IntroComponent .descSect .desc_box h1 {
+  .IntroComponent .descSect .desc_box h3,
+.IntroComponent .descSect .desc_box h2,
+.IntroComponent .descSect .desc_box h1 {
     font-size: 15px;
   }
 }

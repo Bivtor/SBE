@@ -44,7 +44,6 @@
       justify-content: space-evenly;
       row-gap: 30px;
 
-
       .gridItem {
         width: 400px;
         height: 200px;
@@ -124,16 +123,24 @@
     @media (max-width: 1000px) {
       flex-direction: column;
     }
-    .s_image {
-      border-radius: 5px;
+    .imgdivdesc {
+      width: 550px;
+      @media (max-width: 1000px) {
+        width: 350px;
+      }
+      .s_image {
+        border-radius: 5px;
+      }
     }
     .desc_box {
       display: flex;
       flex-direction: column;
       align-content: space-between;
-      width: 400px;
+      width: 500px;
 
-      h3,h2,h1 {
+      h3,
+      h2,
+      h1 {
         font-weight: normal;
         text-align: center;
         font-family: "Montserrat", sans-serif;

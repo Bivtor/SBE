@@ -50,22 +50,24 @@ const IntroComponent = () => {
             </div>
             <br />
             <br />
+            <br />
             <div className={styles.descSect}>
-                <Image
-                    className={styles.s_image}
-                    src={shake}
-                    alt='image'
-                >
-                </Image>
+                <div className={styles.imgdivdesc}>
+                    <Image
+                        className={styles.s_image}
+                        src={shake}
+                        alt='image'
+                    />
+                </div>
                 <div className={styles.desc_box}>
-                    <h3>Whether you need last minute temporary staffing or you&apos;re looking for a pivotal addition to your company, we are your one stop shop for everything staffing and recruiting.</h3>
-                    <h3>We have made it our mission to find qualified professionals who bring value to your team.</h3>
-                    <h3>We take the hassle out of finding reliable staff. We break the stereotype; good employees are hard to find. We made it easy!</h3>
+                    <h2>Whether you need last minute temporary staffing or you&apos;re looking for a pivotal addition to your company, we are your one stop shop for everything staffing and recruiting.</h2>
+                    <h2>We have made it our mission to find qualified professionals who bring value to your team.</h2>
+                    <h2>We take the hassle out of finding reliable staff. We break the stereotype; good employees are hard to find. We made it easy!</h2>
                 </div>
             </div>
             <br />
             <br />
-        </div>
+        </div >
     );
 }
 export default IntroComponent;
