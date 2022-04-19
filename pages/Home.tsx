@@ -1,7 +1,7 @@
 
 
-import IntroComponent from "./components/IntroComponent";
-import SBE_Description from "./components/SBE_Description";
+import IntroComponent from "../components/IntroComponent";
+import SBE_Description from "../components/SBE_Description";
 
 import styles from '../styles/css/Home.module.css'
 const Home = () => {

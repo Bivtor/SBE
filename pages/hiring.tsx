@@ -1,6 +1,6 @@
-import Header from "./components/Header"
+import Header from "../components/Header"
 import styles from '../styles/css/Hiring.module.css'
-import ContactFE from "./components/Contact_fe"
+import ContactFE from "../components/Contact_fe"
 
 const Hiring = () => {
     return (

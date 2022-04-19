@@ -1,5 +1,5 @@
 
-import Header from "./components/Header";
+import Header from "../components/Header";
 import styles from '../styles/css/Hiringp.module.css';
 import Image from "next/image";
 import hphoto from '../public/smwp.jpeg';

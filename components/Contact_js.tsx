@@ -1,4 +1,4 @@
-import styles from '../../styles/css/Contact.module.css';
+import styles from '../styles/css/Contact.module.css';
 import {
     Formik,
     Form,

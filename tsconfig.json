@@ -19,7 +19,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/components/Contact_js.tsx",
+    "components/Contact_js.tsx",
     "pages/hiring.tsx",
     "pages/job-search.tsx"
   ],

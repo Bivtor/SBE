@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import logo from "../../public/sbeimg.png";
-import styles from "../../styles/css/Header.module.css";
+import styles from "../styles/css/Header.module.css";
 
 const Header = () => {
   return (

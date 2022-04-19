@@ -1,12 +1,12 @@
 
-import styles from '../../styles/css/SBE_desc.module.css'
+import styles from '../styles/css/SBE_desc.module.css'
 import Image from 'next/image';
 
 // images
-import constr from '../../public/icons/constr.png'
-import tech from '../../public/icons/tech.png'
-import hcare from '../../public/icons/hcare.webp'
-import design from '../../public/icons/design.png'
+import constr from '../public/icons/constr.png'
+import tech from '../public/icons/tech.png'
+import hcare from '../public/icons/hcare.webp'
+import design from '../public/icons/design.png'
 
 
 //label -> image map

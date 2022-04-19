@@ -1,9 +1,9 @@
 
 import Link from 'next/link';
-import styles from '../../styles/css/Introcomp.module.css'
+import styles from '../styles/css/Introcomp.module.css'
 import Image from 'next/image';
-import shake from '../../public/smile_team.webp'
-import img from '../../public/filler2.jpeg'
+import shake from '../public/smile_team.webp'
+import img from '../public/filler2.jpeg'
 
 const IntroComponent = () => {
 

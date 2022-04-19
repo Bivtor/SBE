@@ -2,10 +2,10 @@
 
 import styles from '../styles/css/Whoweare.module.css'
 import Image from 'next/image';
-import Header from './components/Header';
+import Header from '../components/Header';
 import busimg from '../public/g_port.jpeg';
 
-import useMediaQuery from "./components/useMediaQuery";
+import useMediaQuery from "../components/useMediaQuery";
 
 const Contact = () => {
 
