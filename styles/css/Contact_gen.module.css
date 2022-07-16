@@ -1,0 +1,56 @@
+.C {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+}
+.C h1 {
+  text-align: center;
+  font-family: inherit;
+}
+.C .CG {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  font-family: inherit;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .C .CG {
+    flex-direction: column;
+  }
+}
+.C .CG .box {
+  font-family: inherit;
+}
+.C .CG .box h2 {
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+}
+.C .CG .title {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.C .CG .contactBox {
+  font-family: inherit;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.C .CG .contactBox .contactForm {
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.C .CG .contactBox .contactForm label {
+  font-family: inherit;
+}
+.C .CG .contactBox h2 {
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+}

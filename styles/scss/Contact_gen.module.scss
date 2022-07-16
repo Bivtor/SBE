@@ -1,0 +1,69 @@
+@use "base" as *;
+
+.C {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 50px;
+  h1 {
+    text-align: center;
+    font-family: inherit;
+  }
+  .CG {
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+    display: flex;
+    flex-direction: row;
+
+    font-size: 20px;
+    font-family: inherit;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      // font-size: 12px;
+    }
+
+    height: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .box {
+      font-family: inherit;
+      // border: 2px solid red;
+      h2 {
+        text-align: center;
+        font-family: inherit;
+        font-size: inherit;
+      }
+    }
+
+    .title {
+      @include text-color-1();
+      // border: 2px solid brown;
+      text-align: center;
+    }
+
+    .contactBox {
+      font-family: inherit;
+      border: 2px solid black;
+      border-radius: 5px;
+      padding: 10px;
+
+      .contactForm {
+        font-family: inherit;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        label {
+          font-family: inherit;
+        }
+      }
+
+      //for the box layout , other css pasted from Contact_fe
+      h2 {
+        text-align: center;
+        font-family: inherit;
+        font-size: inherit;
+      }
+    }
+  }
+}
