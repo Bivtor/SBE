@@ -1,8 +1,8 @@
 @use "base" as *;
 
 .C {
-    font-family: "Montserrat", sans-serif;
-    margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
   h1 {
     text-align: center;
     font-family: inherit;
@@ -17,7 +17,7 @@
     font-size: 20px;
     font-family: inherit;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
       flex-direction: column;
       // font-size: 12px;
     }
@@ -36,6 +36,19 @@
       }
     }
 
+    //box 2 "or"
+    .box2 {
+      font-family: inherit;
+      // border: 2px solid red;
+      h2 {
+        margin-top: 50px;
+        text-align: center;
+        font-family: inherit;
+        font-size: 18px;
+        text-decoration: underline;
+      }
+    }
+
     .title {
       @include text-color-1();
       // border: 2px solid brown;
@@ -44,17 +57,29 @@
 
     .contactBox {
       font-family: inherit;
-      border: 2px solid black;
       border-radius: 5px;
       padding: 10px;
+
+      width: 600px;
+      @media (max-width: 1000px) {
+        width: auto;
+      }
 
       .contactForm {
         font-family: inherit;
         display: flex;
         flex-direction: column;
         gap: 10px;
+
         label {
           font-family: inherit;
+          font-size: 15px;
+          font-weight: 400;
+        }
+
+        .err {
+          font-size: 13px;
+          font-weight: 400;
         }
       }
 

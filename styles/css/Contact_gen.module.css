@@ -17,7 +17,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .C .CG {
     flex-direction: column;
   }
@@ -30,15 +30,30 @@
   font-family: inherit;
   font-size: inherit;
 }
+.C .CG .box2 {
+  font-family: inherit;
+}
+.C .CG .box2 h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 18px;
+  text-decoration: underline;
+}
 .C .CG .title {
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 .C .CG .contactBox {
   font-family: inherit;
-  border: 2px solid black;
   border-radius: 5px;
   padding: 10px;
+  width: 600px;
+}
+@media (max-width: 1000px) {
+  .C .CG .contactBox {
+    width: auto;
+  }
 }
 .C .CG .contactBox .contactForm {
   font-family: inherit;
@@ -48,6 +63,12 @@
 }
 .C .CG .contactBox .contactForm label {
   font-family: inherit;
+  font-size: 15px;
+  font-weight: 400;
+}
+.C .CG .contactBox .contactForm .err {
+  font-size: 13px;
+  font-weight: 400;
 }
 .C .CG .contactBox h2 {
   text-align: center;

@@ -15,9 +15,15 @@ const Contact_gen = () => {
             <h1>Contact Us</h1>
             <div className={styles.CG}>
 
+
                 <div className={styles.box}>
                     <h2>Gabe@solutionbasedtherapeutics.com</h2>
                 </div>
+
+                <div className={styles.box2}>
+                    <h2>or</h2>
+                </div>
+
                 <div className={styles.contactBox}>
                     <Formik
                         initialValues={{
@@ -54,22 +60,22 @@ const Contact_gen = () => {
                     >
                         <Form className={styles.contactForm}>
                             <label htmlFor="firstName">First Name</label>
-                            <Field id="firstName" name="firstName" placeholder="First Name" />
-                            <ErrorMessage name="firstName" className={styles.err} />
+                            <Field id="firstName" name="firstName" placeholder="First Name" className={styles.field} />
+                            <ErrorMessage name="firstName" render={msg => <div className={styles.err}>{msg}</div>} />
 
                             <label htmlFor="lastName">Last Name</label >
-                            <Field id="lastName" name="lastName" placeholder="Last Name" />
-                            <ErrorMessage name="lastName" className={styles.err} />
+                            <Field id="lastName" name="lastName" placeholder="Last Name" className={styles.field} />
+                            <ErrorMessage name="lastName" render={msg => <div className={styles.err}>{msg}</div>} />
 
                             <label htmlFor="email">Email</label>
-                            <Field id="email" name="email" placeholder="Email" />
-                            <ErrorMessage name="email" className={styles.err} />
+                            <Field id="email" name="email" placeholder="Email" className={styles.field} />
+                            <ErrorMessage name="email" render={msg => <div className={styles.err}>{msg}</div>} />
 
                             <label htmlFor="location">Location</label>
-                            <Field id="location" name="location" placeholder="Location" />
+                            <Field id="location" name="location" placeholder="Location" className={styles.field} />
 
                             <label htmlFor="message">Message</label>
-                            <Field id="message" name="message" placeholder="Message" />
+                            <Field id="message" name="message" placeholder="Message" className={styles.field} />
 
                             <button type="submit">Submit</button>
                         </Form>
